@@ -3,32 +3,46 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 header {
-  width: 100vw;
-  height: 100px;
-  background-color: pink;
+  background-color: #1081FF;
+  height: 6rem;
+}
+
+nav {
+  background-color: #0FAFE8;
+  height: 3rem;
+
 }
 
 section {
   display: flex;
-  width: 100vw;
-  background-color: yellow;
+  flex-direction: column;
   flex-grow: 1;
-}
-
-nav, aside {
-  width: 100px;
-  background-color: green;
 }
 
 main {
+  background-color: #1DFFFF;
   flex-grow: 1;
-  background-color: violet;
+}
+
+aside {
+  background-color: #0FE8AB;
+  height: 3rem;
 }
 
 footer {
-  width: 100vw;
-  height: 100px;
-  background-color: purple;
+  background-color: #10FF78;
+  height: 6rem;
+}
+
+@media (min-width: 49rem) {
+  section {
+    flex-direction: row;
+    flex-grow: 1;
+  }
+
+  nav, aside {
+    width: 3rem;
+    height: auto;
+  }
 }
