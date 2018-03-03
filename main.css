@@ -1,0 +1,29 @@
+header {
+  width: 100vw;
+  height: 100px;
+  background-color: pink;
+}
+
+section {
+  display: flex;
+  width: 100vw;
+  min-height: calc(100vh - 200px);
+  background-color: yellow;
+}
+
+nav, aside {
+  width: 100px;
+  background-color: green;
+}
+
+main {
+  flex-grow: 1;
+  background-color: violet;
+}
+
+
+footer {
+  width: 100vw;
+  height: 100px;
+  background-color: purple;
+}
